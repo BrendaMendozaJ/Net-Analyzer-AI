@@ -1,4 +1,6 @@
 # **NetAnalyzer AI** 🖥️⚡
+![netanaly](https://github.com/user-attachments/assets/0b4221ac-ee77-4418-a598-1064694302e3)
+
 
 **NetAnalyzer AI** es un sistema de análisis predictivo de tráfico de red que utiliza **Machine Learning** para la detección de anomalías y la predicción del tráfico futuro en redes industriales. Este proyecto está diseñado para ayudar a mejorar la seguridad y optimizar el rendimiento en redes industriales mediante la detección temprana de patrones inusuales y la anticipación de problemas futuros.
 
