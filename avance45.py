@@ -53,9 +53,6 @@ class ContadorTiempo:
 class IndustrialProtocolAnalyzer:
     @staticmethod
     def detect_industrial_protocol(packet):
-        """
-        Advanced industrial protocol detection
-        """
         protocol_info = {
             "name": None,
             "risk_level": "Low",
@@ -93,9 +90,6 @@ class IndustrialProtocolAnalyzer:
 
     @staticmethod
     def detectar_eventos_de_seguridad(packet):
-        """
-        Advanced detection of security events (e.g., abnormal packet patterns)
-        """
         if IP in packet:
             source_ip = packet[IP].src
             destination_ip = packet[IP].dst
@@ -112,9 +106,6 @@ class ProcesadorDeLogs:
         self.archivo_log = archivo_log
 
     def leer_logs(self):
-        """
-        Leer el archivo de logs y extraer los eventos relevantes.
-        """
         with open(self.archivo_log, 'r') as f:
             logs = f.readlines()
 
@@ -342,10 +333,6 @@ class DetectorDeAnomalias:
             return self.data
       
         self.data = self.data.dropna(subset=[length_column])
-        
-        if len(self.data) < 2:
-            logging.warning(f"Insufficient data for anomaly detection. Only {len(self.data)} data points.")
-            return self.data
         
         try:
             X = self.data[[length_column]]
